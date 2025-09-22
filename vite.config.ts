@@ -9,6 +9,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    allowedHosts: ["agent-pilgrims-5.onrender.com"],
+  },
   plugins: [
     react(),
     mode === 'development' &&
